@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -73,7 +76,7 @@
       <!-- advantages  SECTION 2-->
       <section class="section">
         <div class="container">
-          <h2 class="title-hidden">Advantages</h2>
+          <h2 class="visually-hidden">Advantages</h2>
           <ul class="list advantages-list-container">
             <li class="item-text">
               <div class="advantages-icon-container">
@@ -456,6 +459,21 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-form">
+          <p class="footer-form-text">Subscribe</p>
+          <form class="footer-contact-form">
+            <input type="text" class="footer-input" placeholder="E-mail" />
+            <div class="footer-contact-btn">
+              <button class="footer-modal-btn" type="submit">
+                <span class="footer-modal-btn-text">Subscribe</span>
+                <svg class="footer-btn-icon" width="24" height="20">
+                  <Use href="./images/icons.svg#icon-send"></Use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -468,6 +486,86 @@
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
+
+        <p class="modal-form-text">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <span class="modal-form-input-descr">Name</span>
+
+            <span class="modal-form-input-wrapper">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-form-input"
+                required
+                pattern="^[a-zA-Z]+$"
+                minlength="3"
+              />
+              <svg class="modal-form-input-icon" width="12" height="12">
+                <Use href="./images/icons.svg#icon-pers"></Use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-descr">Phone</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-form-input"
+                required
+                pattern="^[0-9]{10}"
+              />
+              <svg class="modal-form-input-icon" width="13" height="13">
+                <Use href="./images/icons.svg#icon-tel"></Use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-descr">Email</span>
+
+            <span class="modal-form-input-wrapper">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-form-input"
+                required
+              />
+
+              <svg class="modal-form-input-icon" width="15" height="12">
+                <Use href="./images/icons.svg#icon-mail"></Use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-descr">Comment</span>
+            <textarea
+              name="user-message"
+              class="modal-form-message"
+              cols="30"
+              rows="10"
+              class="modal-form-message"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <input
+            id="user-policy"
+            type="checkbox"
+            name="user-policy"
+            class="modal-form-check visually-hidden"
+          />
+          <label for="user-policy" class="modal-form-check-descr"
+            >I accept the terms and conditions of the&nbsp;
+            <a class="link" href=""> Privacy Policy</a></label
+          >
+          <button type="submit" class="modal-form-btn">Send</button>
+        </form>
       </div>
     </div>
 
