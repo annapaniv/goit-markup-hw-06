@@ -539,6 +539,7 @@ body {
 .footer-modal-btn:hover {
   outline: none;
   background-color: var(--color-hover-focus-socialbg);
+  cursor: pointer;
 }
 /* ===========================PORTFOLIO========================== */
 /* BUttons */
