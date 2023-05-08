@@ -9,6 +9,7 @@
   --border-batton-portfolio: #e7e9fc;
   --customer-icon-color: #8e8f99;
   --footer-social-hover: #31d0aa;
+  --modal-window-color:#FCFCFC;
 }
 
 h1,
@@ -684,7 +685,7 @@ body {
   transform: translate(-50%, -50%);
   width: 408px;
   height: 584px;
-  background-color: var(--color-rest);
+  background-color: var(--modal-window-color);
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 72px;
